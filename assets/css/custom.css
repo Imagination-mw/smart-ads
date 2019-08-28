@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(0, 171, 255);
+}
+.tile{
+  text-align:center;
+  background-color:#0087fdc7;
+  border-color:#bce8f1;
+  cursor: pointer;
+}
+
+.tile:hover{
+  background-color: #0087fd;
+  border-color:#0087fd4d;
+  padding:-30px;
+  color:#fff;
+}
+.tile-icon{
+  font-size:300%;
+}
+
+ul.list-unstyled li a {
+  text-decoration: none;
+  color:#000;
+}
+
+#head {
+  min-height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg.jpg);
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 100%, 92% 95%, 92% 100%, 0 100%, 0 0);
+  width: 100%;
+  color:#fff;
+}
+
+#head section#welcome-message {
+  margin-top: 1em;
+}
+#head section#welcome-message p {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+}
+.container-color {
+  background-color: #dadada !important;
+}
+
+.bg-theme-light{
+  background-color:#fafafa;
+}
+hr.hr-custom{
+  margin-bottom:3px;
+  margin-top:2px;
+  border-color:rgb(0, 171, 255)!important;
+}
+
+hr.hr-custom-wide{
+  margin-bottom:3px;
+  margin-top:2px;
+  border-width: thick;
+  border-color:rgb(0, 171, 255)!important;
+}
+.system-box{
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.21);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.21);
+  box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.21);
+  background-color:#fafafa;
+  min-height: 700px;
+}
+
+.main-box{
+  min-height: 400px !important;
+}
+.theme-color {
+  color: #FFBF00 !important;
+}
+
+td{
+  font-size:10pt !important;
+}
+.text-theme-color{
+  color:rgb(0, 171, 255)!important;
+}
+.bg-black {
+  background-color: black !important;
+}
+
+#banner {
+  color: #fff !important;
+}
+
+img.img-banner {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #000;
+  min-height: 5em;
+  margin-top: 2em;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer ul#social-links li {
+  display: inline-block;
+  background-color: #BF9B30;
+  border-radius: 5px;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+footer #bottom-bar {
+  background-color: #BF9B30;
+  width: 100%;
+  padding: 10px;
+}
+
+hr.hr-custom {
+  background-color: #BF9B30;
+}
+
+a.list-link{
+  color:#000;
+  text-decoration:none;
+}
+
+.bg-error{
+  background-color:rgb(255, 220, 224) !important;
+}

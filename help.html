@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Ads</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <link rel="stylesheet" href="assets/vendor/toast-master/css/jquery.toast.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.8.2-web/css/all.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/roboto300.css">
+</head>
+<body>
+<div class="container px-5">
+    <div class="mt-1">
+        <div class="container">
+            <div class="system-box pb-5">
+                <nav class="navbar navbar-expand-md navbar-dark bg-black py-3">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <i class="fa fa-bullhorn "></i>&nbsp;
+                            <span class="text-theme-color">Smart Ads</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Left Side Of Navbar -->
+
+                            <!-- Right Side Of Navbar -->
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="help.html">
+                                        <i class="fa fa-info-circle"></i>&nbsp;Help
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="register.html">
+                                        <i class="fa fa-user-plus"></i>&nbsp;Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- ./navbar-->
+
+                <section class="row mt-2">
+                    <div class="col-sm-6 ">
+                        <div class="mx-5">
+                            <h4>User Help</h4>
+                            <hr class="hr-custom-wide">
+                        </div>
+
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col-sm-6">
+                        <div class="mx-5">
+                            <div class="card">
+                                <div class="card-header py-2">Accounts</div>
+                                <div class="card-body">
+                                   You can link your Smart-Ads account to social networking accounts on which you are registered on.
+                                    <br>
+                                    Navigate to the Accounts page and click on <strong>Add Account</strong> button to link the account.
+                                    <br><br>
+                                    You can <strong>update</strong> your linked SNS account by accessing the manage window of each account.
+                                    <br> <br>
+                                    Similarly  you can <strong>remove</strong> your account by accessing the same manage window.
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-header py-2">Posts</div>
+                                <div class="card-body">
+                                    You can view all your posts by navigating to the posts page.
+                                    <br>
+                                    Create a new post by clicking the  <strong>new post</strong> button which will display a form for you to fill in the
+                                    details.
+                                    <br><br>
+                                    You can also filter posts by using the filter options available to the left of the posts page.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="footer">
+                    <div class="container px-5">
+                        <hr>
+                        <div class="text-center">
+                            <small> &copy;Smart-Ads&nbsp;&middot;&nbsp;2019</small>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="assets/vendor/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#submit-btn').on('click',function(){
+            document.getElementById('progress').style.display="block";
+            document.getElementById('loader').style.display='inline';
+            document.getElementById('message').innerText='Authenticating';
+            $(this).attr('disabled','true');
+            setTimeout(function(){
+                document.getElementById('message').innerText ="Successful! Redirecting ...";
+                window.location.assign('dashboard.html');
+            },2000);
+        });
+    })
+</script>
+</body>
+</html>

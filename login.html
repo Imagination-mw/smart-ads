@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Ads</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <link rel="stylesheet" href="assets/vendor/toast-master/css/jquery.toast.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.8.2-web/css/all.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/roboto300.css">
+</head>
+<body>
+<div class="container px-5">
+    <div class="mt-1">
+        <div class="container">
+            <div class="system-box pb-5">
+                <nav class="navbar navbar-expand-md navbar-dark bg-black py-3">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <i class="fa fa-bullhorn "></i>&nbsp;
+                            <span class="text-theme-color">Smart Ads</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Left Side Of Navbar -->
+
+                            <!-- Right Side Of Navbar -->
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="help.html">
+                                        <i class="fa fa-info-circle"></i>&nbsp;Help
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="register.html">
+                                        <i class="fa fa-user-plus"></i>&nbsp;Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- ./navbar-->
+
+                <section class="row mt-2">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 px-5 text-center ">
+                        <div class="mx-5">
+                            <h4>Login to Smart Ads</h4>
+                            <hr class="hr-custom-wide">
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3"></div>
+                </section>
+                <section class="row ">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 px-5">
+                            <div class="card bg-primary rounded-0 mx-5" id="progress" style="display: none;">
+                                <div class="card-body py-1 text-white ">
+                                    <span id="loader">
+                                        <i class="fa fa-spin fa-spinner"></i>
+                                    </span>
+                                    <span id="message">Authenticating you</span>
+                                </div>
+                            </div>
+                            <div class="card rounded-3 mt-2 mx-5">
+
+                                <div class="card-body">
+                                    <form action="dashboard.html" method="GET">
+                                        <div class="form-group">
+                                            <label >Username</label>
+                                            <input name="username" type="text" class="form-control form-control-sm rounded-1"
+                                                   placeholder="your username" required>
+                                        </div>
+                                        <hr style="border-width:3px;">
+                                        <div class="form-group">
+
+                                            <div class="clearfix">
+                                         <span class="float-left">
+                                         Password
+                                    </span>
+                                                <span class="float-right">
+                                        <a href="" style="font-size:9pt;">
+                                            Forgot Password?
+                                        </a>
+                                    </span>
+                                            </div>
+
+                                            <input name="password" type="password" class="form-control rounded-1 form-control-sm"
+                                                   placeholder="your password" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" id="submit-btn" class="btn btn-primary btn-sm rounded-0">Login</button>
+                                        </div>
+                                        <a href="register.html">
+                                            I don't have an account
+                                        </a>
+                                    </form>
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="col-sm-3">
+
+                    </div>
+                </section>
+                <section id="footer">
+                    <div class="container px-5">
+                        <hr>
+                        <div class="text-center">
+                            <small> &copy;Smart-Ads&nbsp;&middot;&nbsp;2019</small>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="assets/vendor/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#submit-btn').on('click',function(){
+            document.getElementById('progress').style.display="block";
+            document.getElementById('loader').style.display='inline';
+            document.getElementById('message').innerText='Authenticating';
+            $(this).attr('disabled','true');
+            setTimeout(function(){
+                document.getElementById('message').innerText ="Successful! Redirecting ...";
+                window.location.assign('dashboard.html');
+            },2000);
+        });
+    })
+</script>
+</body>
+</html>

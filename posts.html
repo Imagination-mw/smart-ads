@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Ads | Accounts</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <link rel="stylesheet" href="assets/vendor/toast-master/css/jquery.toast.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.8.2-web/css/all.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/roboto300.css">
+    <link rel="stylesheet" href="assets/vendor/chartist/chartist.min.css">
+    <link rel="stylesheet" href="../../../wamp64/www/paramount-auto/public/assets/css/custom.css">
+</head>
+<body>
+<div class="container px-5">
+    <div class="mt-1">
+        <div class="container">
+            <div class="system-box pb-5">
+                <nav class="navbar navbar-expand-md navbar-dark bg-black py-3">
+                    <div class="container">
+                        <a class="navbar-brand" href="dashboard.html">
+                            <i class="fa fa-bullhorn "></i>&nbsp;
+                            <span class="text-theme-color">Smart Ads</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="{{ __('Toggle navigation') }}">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Left Side Of Navbar -->
+
+                            <!-- Right Side Of Navbar -->
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-external-link-alt"></i>&nbsp;Screen
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="accounts.html">
+                                            <i class="fa fa-user-cog"></i>&nbsp;Accounts
+                                        </a>
+                                        <a class="dropdown-item" href="posts.html">
+                                            <i class="fa fa-rss"></i>&nbsp;Posts
+                                        </a>
+                                        <a class="dropdown-item" href="feedback.html">
+                                            <i class="fa fa-comment-alt"></i>&nbsp;Feedback
+                                        </a>
+                                        <a class="dropdown-item" href="analytics.html">
+                                            <i class="fa fa-chart-area"></i>&nbsp;Analytics
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="notifications.html">
+                                        <i class="fa fa-bell"></i>&nbsp;<span class="badge badge-pill">12</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="profile.html">
+                                        <i class="fa fa-user-circle"></i>&nbsp;Rose Petals
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="login.html">
+                                        <i class="fa fa-sign-out-alt"></i>&nbsp;Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- ./navbar-->
+
+                <div class="row mt-2 px-4 mb-0">
+                    <div class="col-sm-12">
+                        <h4>
+                            <i class="fa fa-rss"></i>&nbsp;Posts
+                        </h4>
+                    </div>
+                </div>
+                <div class="row  px-4">
+                    <div class="col-sm-12 ">
+                        <hr class="hr-custom">
+                    </div>
+                    <div class="col-sm-3">
+                        <h6 class="mt-2">
+                            <i class="fa fa-filter"></i>&nbsp;Filter By Accounts
+                        </h6>
+                        <ul class="list-unstyled ml-4">
+                            <li>
+                                <a href=""> <i class="fab fa-facebook"></i>&nbsp;&nbsp;rpetals</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-facebook"></i>&nbsp;&nbsp;rfpetals</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="fab fa-twitter"></i>&nbsp;&nbsp;rpetals</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="fab fa-instagram"></i>&nbsp;&nbsp;rpetals</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;rpetals</a>
+                            </li>
+                        </ul>
+
+                        <h6 class="mt-2">
+                            <i class="fa fa-filter"></i>&nbsp;Filter By SNS
+                        </h6>
+                        <ul class="list-unstyled ml-4">
+                            <li>
+                                <a href=""> <i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="fab fa-instagram"></i>&nbsp;&nbsp;Instagram</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-9">
+                        <button data-toggle="modal" data-target="#new-ad-window" class="btn btn-sm btn-primary mb-2">
+                            <i class="fa fa-plus-circle"></i>&nbsp;New Post
+                        </button>
+
+                        <div class="card rounded-0 bg-light">
+                            <div class="card-body px-1 py-1">
+                                <div class="card">
+                                    <div class="card-body py-2">
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda delectus, fugiat fugit illo
+                                            laudantium nobis numquam, omnis placeat quisquam quo rerum veniam. Ab,
+                                            cupiditate dolore impedit iste molestias voluptas?
+                                        </div>
+                                        <hr>
+                                        <div class="clearfix">
+                                            <span class="float-left">
+                                               <small> 56&nbsp;<i class="fa fa-comment-alt"></i></small>&nbsp;
+                                               <small> 14&nbsp;<i class="fa fa-thumbs-up"></i></small>&nbsp;
+                                                <small>
+                                                    <i class="fa fa-clock"></i>&nbsp;22 Hours ago
+                                                </small>
+                                            </span>
+                                            <span class="float-right">
+                                                <i class="fab fa-facebook"></i>&nbsp;
+                                                <i class="fab fa-twitter"></i>&nbsp;
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                                </div><!-- ./ post -->
+                                <div class="card mt-2">
+                                    <div class="card-body py-2">
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda delectus, fugiat fugit illo
+                                            laudantium nobis numquam, omnis placeat quisquam quo rerum veniam. Ab,
+                                            cupiditate dolore impedit iste molestias voluptas?
+                                        </div>
+                                        <hr>
+                                        <div class="clearfix">
+                                            <span class="float-left">
+                                               <small> 56&nbsp;<i class="fa fa-comment-alt"></i></small>&nbsp;
+                                               <small> 14&nbsp;<i class="fa fa-thumbs-up"></i></small>&nbsp;
+                                                 <small>
+                                                    <i class="fa fa-clock"></i>&nbsp;Thursday, 22 June 2019
+                                                </small>
+                                            </span>
+                                            <span class="float-right">
+                                                <i class="fab fa-facebook"></i>&nbsp;
+                                                <i class="fab fa-twitter"></i>&nbsp;
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                                </div><!-- ./ post -->
+                                <div class="card mt-2">
+                                    <div class="card-body py-2">
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda delectus, fugiat fugit illo
+                                            laudantium nobis numquam, omnis placeat quisquam quo rerum veniam. Ab,
+                                            cupiditate dolore impedit iste molestias voluptas?
+                                        </div>
+                                        <hr>
+                                        <div class="clearfix">
+                                            <span class="float-left">
+                                               <small> 56&nbsp;<i class="fa fa-comment-alt"></i></small>&nbsp;
+                                               <small> 14&nbsp;<i class="fa fa-thumbs-up"></i></small>&nbsp;
+                                                 <small>
+                                                    <i class="fa fa-clock"></i>&nbsp;Thursday, 22 June 2019
+                                                </small>
+                                            </span>
+                                            <span class="float-right">
+                                                <i class="fab fa-facebook"></i>&nbsp;
+                                                <i class="fab fa-twitter"></i>&nbsp;
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                                </div><!-- ./ post -->
+                                <div class="card mt-2">
+                                    <div class="card-body py-2">
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda delectus, fugiat fugit illo
+                                            laudantium nobis numquam, omnis placeat quisquam quo rerum veniam. Ab,
+                                            cupiditate dolore impedit iste molestias voluptas?
+                                        </div>
+                                        <hr>
+                                        <div class="clearfix">
+                                            <span class="float-left">
+                                               <small> 56&nbsp;<i class="fa fa-comment-alt"></i></small>&nbsp;
+                                               <small> 14&nbsp;<i class="fa fa-thumbs-up"></i></small>&nbsp;
+                                                 <small>
+                                                    <i class="fa fa-clock"></i>&nbsp;Thursday, 22 June 2019
+                                                </small>
+                                            </span>
+                                            <span class="float-right">
+                                                <i class="fab fa-facebook"></i>&nbsp;
+                                                <i class="fab fa-twitter"></i>&nbsp;
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                                </div><!-- ./ post -->
+                                <div class="card mt-2">
+                                    <div class="card-body py-2">
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda delectus, fugiat fugit illo
+                                            laudantium nobis numquam, omnis placeat quisquam quo rerum veniam. Ab,
+                                            cupiditate dolore impedit iste molestias voluptas?
+                                        </div>
+                                        <hr>
+                                        <div class="clearfix">
+                                            <span class="float-left">
+                                               <small> 56&nbsp;<i class="fa fa-comment-alt"></i></small>&nbsp;
+                                               <small> 14&nbsp;<i class="fa fa-thumbs-up"></i></small>&nbsp;
+                                                 <small>
+                                                    <i class="fa fa-clock"></i>&nbsp;Thursday, 22 June 2019
+                                                </small>
+                                            </span>
+                                            <span class="float-right">
+                                                <i class="fab fa-facebook"></i>&nbsp;
+                                                <i class="fab fa-twitter"></i>&nbsp;
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                                </div><!-- ./ post -->
+                            </div><!-- ./ posts list body -->
+                            <div class="card-body border-top text-center">
+                                    <button class="btn btn-sm btn-outline-primary"> <i class="fa fa-rss"></i>&nbsp;Load More Posts</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="new-ad-window" tabindex="-1" role="dialog" data-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fa fa-rss"></i>&nbsp;New Ad </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card bg-primary rounded-0 mb-2" id="progress" style="display: none;">
+                    <div class="card-body py-1 text-white ">
+                                    <span id="loader">
+                                        <i class="fa fa-spin fa-spinner"></i>
+                                    </span>
+                        <span id="message"></span>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label >Post Content</label>
+                        <textarea name="caption" id="caption"  rows="2" class="form-control rounded-0"></textarea>
+                        <div class="clearfix mt-1">
+                            <button class="btn btn-sm btn-outline-primary rounded-0 ">
+                                <i class="fa fa-file-upload"></i>&nbsp;Attach File
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary rounded-0 ">
+                             <i class="fa fa-image"></i>&nbsp;Upload Image
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary rounded-0">
+                                <i class="fa fa-video"></i>&nbsp;Upload Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label >Post To</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label">
+                                rpetals ( <i class="fab fa-facebook"></i> )
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label" >
+                                rfpetals ( <i class="fab fa-facebook"></i> )
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label" >
+                                rfpetals ( <i class="fab fa-twitter"></i> )
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label">
+                                rfpetals ( <i class="fab fa-instagram"></i> )
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" >
+                            <label class="form-check-label">
+                                rfpetals ( <i class="fab fa-whatsapp"></i> )
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label >Timing</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="now" value="now" name="timing" class="custom-control-input">
+                            <label class="custom-control-label" for="now" checked>Now</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="scheduled" value="scheduled" name="timing" class="custom-control-input">
+                            <label class="custom-control-label" for="scheduled">Scheduled</label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="mr-auto">
+                    <button type="button" id="post-btn"
+                            class="btn btn-primary btn-sm rounded-0">Post Ad
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm rounded-0" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./ new post window -->
+<script src="assets/vendor/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#post-btn').on('click',function(){
+            $('#progress').removeClass('bg-success');
+            $('#progress').addClass('bg-primary');
+            document.getElementById('loader').innerHTML ="<i class='fa fa-spin fa-spinner'></i>";
+            document.getElementById('progress').style.display="block";
+            document.getElementById('loader').style.display='inline';
+            document.getElementById('message').innerText='Sending your Ad';
+            $(this).attr('disabled','true');
+            setTimeout(function(){
+                $('#progress').removeClass('bg-primary');
+                $('#progress').addClass('bg-success');
+                document.getElementById('loader').innerHTML ="<i class='fa fa-check-circle'></i>";
+                document.getElementById('message').innerText ="Successfully posted your Ad!";
+                document.getElementById('post-btn').disabled =false;
+            },2000);
+        });
+    })
+</script>
+</body>
+</html>
